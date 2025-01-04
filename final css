@@ -1,7 +1,7 @@
 /* Global Styles */
 body {
     font-family: 'Poppins', sans-serif;
-    background: linear-gradient(45deg, #2e2e2e, #111010);
+    background: linear-gradient(45deg, #2e2e2e, #000000);
     margin: 0;
     padding: 0;
     color: white;
@@ -104,6 +104,7 @@ body {
     display: flex;
     justify-content: space-evenly;
     padding: 40px;
+    border-bottom: #ff007f;
   }
   
   .feature-card {
@@ -116,6 +117,20 @@ body {
   }
   
   .feature-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .engagement-card {
+    width: 250px;
+    background: rgba(255, 255, 255, 0.1);
+    padding: 20px;
+    border-radius: 10px;
+    
+    text-align: center;
+  }
+  
+  .engagement-card h3 {
     font-size: 1.5rem;
     margin-bottom: 10px;
   }
@@ -133,7 +148,7 @@ body {
     padding: 20px;
     border-radius: 10px;
     border-right: 5px solid neon;
-    box-shadow: 0 0 15px 5px rgba(10, 28, 11, 0.7);
+    box-shadow: 0 0 15px 5px rgba(255, 0, 127, 0.7);
   }
   
   .tech-slider {
