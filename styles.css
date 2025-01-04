@@ -97,7 +97,7 @@ header {
 }
 
 .logo {
-    width: 100px;  /* Adjust this size as needed */
+    width: 200px;  /* Adjust this size as needed */
     height: auto;
 }
 
@@ -157,7 +157,7 @@ nav ul li a:hover {
     justify-content: center;
     text-align: center;
     height: 100vh;
-    padding: 0 20px;
+    padding: 0 10px;
     opacity: 0;
     animation: slideUp 1s forwards, fadeIn 1s ease-in-out;
 }
@@ -324,3 +324,65 @@ footer p {
     font-size: 14px;
     margin-top: 20px;
 }
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns */
+  gap: 20px; /* Space between boxes */
+  padding: 20px;
+}
+
+.grid-box {
+  background-color: #e0e0e0;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  color: #333;
+  transition: transform 0.3s ease, background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.grid-box:hover {
+  background-color: pink;
+  color: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.team-images{
+    text-align: center;
+}
+.image-description1{
+    opacity: 0;
+    animation: fadeIn 1s ease-in forwards;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.image-description2{
+    opacity: 0;
+    animation: fadeIn 2s ease-in forwards;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.image-description3{
+    opacity: 0;
+    animation: fadeIn 3s ease-in forwards;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.image-description4{
+    opacity: 0;
+    animation: fadeIn 4s ease-in forwards;
+    display: inline-block;
+    border: 2px solid white;
+    border-radius: 50px;
+}
+.heading{
+    text-align: center;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;}
