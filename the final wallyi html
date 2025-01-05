@@ -8,33 +8,45 @@
   <link rel="stylesheet" href="m.css">
 </head>
 <body>
+  
+  <div class="stars"></div>
+<div class="content">
+  <h1 class="main-heading">Welcome to Trend-Forge</h1>
+  <h2 class="sub-heading">Engage, Learn, and Grow</h2>
+ 
+</div>
+
+
+
+
+
   <!-- Navigation Bar -->
   <header class="navbar">
     <div class="logo">Trend-Forge</div>
     <nav>
       <ul>
-        <li><a href="#welcome-section">Home</a></li>
-        <li><a href="#features-section">About</a></li>
-        <li><a href="#">Team</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
         <li><a href="#">Network Report</a></li>
       </ul>
     </nav>
   </header>
 
   <!-- Welcome Section -->
-  <section class="welcome-section">
+  <section id="home" class="welcome-section">
     <div class="welcome-box">
       <h1>Welcome to Trend-Forge</h1>
       <h2>Engage, Learn, and Grow</h2>
       <p>Social media analysis plays a critical role in understanding the performance of content, identifying trends, and optimizing strategies for growth. By analyzing key metrics, we can determine what works and what doesn't, which ultimately drives network expansion and audience engagement.</p>
     </div>
     <div class="phone-card">
-      <img src="https://via.placeholder.com/150" alt="Phone" class="phone-image">
+      <img src="Screenshot 2025-01-05 at 6.09.41 PM.png" alt="Phone" class="phone-image">
     </div>
   </section>
 
   <!-- Features Section -->
-  <section class="features-section">
+  <section id="feature" class="features-section">
     <h2>Features of Trend-Forge</h2>
     <div class="feature-card">
       <h3>Real-time Analytics</h3>
@@ -73,10 +85,10 @@
   </section>
 
   <!-- About Section -->
-  <section class="about-section">
+  <section id="about"   class ="about-section">
     <div class="about-box">
-      <h2>About Our App</h2>
-      <p>Our app provides a comprehensive solution for social media performance analysis, combining cutting-edge technologies like Langflow and ChatGPT. With real-time data processing, users can gain insights into engagement, growth, and content effectiveness. By tracking metrics across platforms, users can optimize their social media strategies for maximum impact.</p>
+      <h2>About Our Website</h2>
+      <p>Our website provides a comprehensive solution for social media performance analysis, combining cutting-edge technologies like Langflow and ChatGPT. With real-time data processing, users can gain insights into engagement, growth, and content effectiveness. By tracking metrics across platforms, users can optimize their social media strategies for maximum impact.</p>
     </div>
     <div class="tech-slider">
       <div class="tech-box">Langflow</div>
@@ -112,26 +124,26 @@
   </section>
 
   <!-- Team Section -->
-  <section class="team-section">
+  <section  id="team" class="team-section">
     <div class="team-card">
-      <img src="https://via.placeholder.com/100" alt="Team Member 1">
-      <p>John Doe</p>
-      <p>Lead Developer</p>
+      <img src="Screenshot 2025-01-05 at 6.11.57 PM.png" alt="Team Member 1">
+      <p>Krishnansh Puri</p>
+      <p>Web-Dev Lead</p>
     </div>
     <div class="team-card">
-      <img src="https://via.placeholder.com/100" alt="Team Member 2">
-      <p>Jane Smith</p>
-      <p>Project Manager</p>
+      <img src="Screenshot 2025-01-05 at 8.29.07 PM.png" alt="Team Member 2">
+      <p>Ankit Jaiswal</p>
+      <p>Back-End Lead</p>
     </div>
     <div class="team-card">
-      <img src="https://via.placeholder.com/100" alt="Team Member 3">
-      <p>Michael Lee</p>
-      <p>Data Analyst</p>
+      <img src="Screenshot 2025-01-05 at 8.25.20 PM.png" alt="Team Member 3">
+      <p>Kunal Kashyap</p>
+      <p>Lead</p>
     </div>
     <div class="team-card">
-      <img src="https://via.placeholder.com/100" alt="Team Member 4">
-      <p>Alice Johnson</p>
-      <p>UI/UX Designer</p>
+      <img src="Screenshot 2025-01-05 at 6.12.16 PM.png" alt="Team Member 4">
+      <p>Charanjot Singh</p>
+      <p>Co-Lead</p>
     </div>
   </section>
 
@@ -162,5 +174,7 @@
       </ul>
     </div>
   </footer>
+
+  
 </body>
 </html>
