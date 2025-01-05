@@ -1,55 +1,151 @@
 /* Global Styles */
 body {
-    font-family: 'Poppins', sans-serif;
-    background: linear-gradient(45deg, #2e2e2e, #000000);
-    margin: 0;
-    padding: 0;
-    color: white;
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  background: black;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  animation: slideUp 1.s ease-out forwards; /* Apply slide-up animation */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);  /* Start from the bottom (off-screen) */
   }
-  
-  a {
-    text-decoration: none;
-    color: #fff;
+  100% {
+    transform: translateY(0);  /* End at the original position */
   }
-  
-  ul {
-    padding: 0;
-    list-style: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+.main-heading {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  color: #ff69b4;
+  margin: 20px 0;
+  background: linear-gradient(90deg, #e96161, #eca8a8, #f8464f);
+  background-size: 200%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: twinkle 3s infinite linear;
+}
+
+@keyframes twinkle {
+  0% {
+    background-position: 0%;
   }
-  
+  100% {
+    background-position: 200%;
+  }
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  color: #e5b7ae;
+  margin-top: 10px;
+  animation: floatSubHeading 3s infinite ease-in-out;
+}
+
+@keyframes floatSubHeading {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+
+
+
+.content {
+  position: relative;
+  z-index: 1;
+  max-width: 800px;
+  margin: 50px auto;
+  text-align: center;
+}
+
+.stars {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  z-index: -1;
+  overflow: hidden;
+}
+
+.stars::before,
+.stars::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: radial-gradient(circle, rgb(218, 123, 123) 1px, transparent 1px);
+  background-size: 50px 50px;
+  animation: stars-animation 50s linear infinite;
+}
+
+.stars::after {
+  background-size: 100px 100px;
+  animation-duration: 100s;
+  animation-direction: reverse;
+}
+
+@keyframes stars-animation {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-50%, -50%);
+  }
+}
+
   /* Navigation Bar */
   .navbar {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px;
-    background: transparent;
-    border-radius: 50px;
-    border: 3px solid transparent;
-    margin: 20px;
-    box-shadow: 0 0 15px 5px rgba(255, 0, 127, 0.7);
-  }
-  
-  .navbar ul {
-    display: flex;
-    gap: 30px;
-  }
-  
-  .navbar a {
-    color: white;
-    font-size: 1.2rem;
-    font-weight: bold;
-    transition: transform 0.3s, color 0.3s;
-  }
-  
-  .navbar a:hover {
-    color: #ff007f;
-    transform: scale(1.1);
-  }
-  
-  .navbar a:active {
-    color: #d10069;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 25px;
+  box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+  margin: 20px auto;
+  width: 80%;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3s ease;
+}
+
+.navbar ul li a:hover {
+  color: #ff69b4;
+}
+
   
   /* Welcome Section */
   .welcome-section {
@@ -108,32 +204,34 @@ body {
   }
   
   .feature-card {
-    width: 250px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    
-    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .feature-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  .feature-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
   }
+  
 
   .engagement-card {
-    width: 250px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
     border-radius: 10px;
-    
-    text-align: center;
+    margin: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
-  .engagement-card h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+  .engagement-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
   }
+  
   
   /* About Section */
   .about-section {
@@ -152,21 +250,26 @@ body {
   }
   
   .tech-slider {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    grid-auto-rows: 100px; /* Set height for rows */
     gap: 20px;
     position: absolute;
-    right: 20px;
-    animation: slider 15s infinite linear;
+    right: 140px; /* Align to the right side */
+    width: 350px; /* Adjust width for all columns to fit */
+    height: 350px; /* Adjust height for rows to fit */
+    animation: slider 6s infinite ease-in-out; /* Sliding animation */
   }
   
   @keyframes slider {
     0% {
-      transform: translateX(0);
+      transform: translateY(0); /* Start at the top */
+    }
+    50% {
+      transform: translateY(-25%); /* Move to the middle of the sliding area */
     }
     100% {
-      transform: translateX(-100%);
+      transform: translateY(0); /* Return to the top */
     }
   }
   
@@ -175,14 +278,19 @@ body {
     padding: 15px;
     border-radius: 10px;
     font-weight: bold;
-   
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+  
+  
   
   /* Statistics Section */
   .statistics-section {
     display: flex;
     justify-content: space-evenly;
     padding: 40px;
+   
   }
   
   .stat-card {
@@ -192,11 +300,17 @@ body {
     border-radius: 10px;
     box-shadow: 0 0 15px 5px rgba(53, 48, 50, 0.7);
     text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
   
   .stat-card h3 {
     font-size: 2rem;
     color: #ff007f;
+  }
+
+  .stat-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
   }
   
   /* Team Section */
@@ -217,11 +331,19 @@ body {
   }
   
   .team-card img {
-    width: 100%;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
+    width: 120px;   /* Set a smaller width */
+    height: 120px;  /* Set a smaller height */
+    border-radius: 50%; /* Keeps the circular shape */
+    object-fit: cover; /* Ensures the image fits without distortion */
+    transition: transform 0.3s ease;
+}
+
+
+  
+  .team-card:hover img {
+    transform: scale(1.1);
   }
+  
   
   .team-card p {
     margin: 10px 0;
@@ -245,15 +367,29 @@ body {
     margin-bottom: 10px;
   }
   
-  .footer-column ul li {
-    margin-bottom: 8px;
+  .footer-column ul li a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+    transition: color 0.3s ease;
   }
   
-  .footer-column ul li a {
-    color: white;
-    font-size: 1rem;
+  .footer-column ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #ff69b4;
+    transition: width 0.3s ease;
   }
   
   .footer-column ul li a:hover {
-    color: #ff007f;
-  }}
+    color: #ff69b4;
+  }
+  
+  .footer-column ul li a:hover::after {
+    width: 100%;
+  }
+  }      
