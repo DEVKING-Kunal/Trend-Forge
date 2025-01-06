@@ -6,6 +6,7 @@
   <link rel="icon" href="logo.png" type="image/png" >
   <link rel="shortcut icon" href="logo.png" type="image/png">
   <title>Trend-Forge</title>
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="m.css">
 </head>
@@ -126,28 +127,41 @@
   </section>
 
   <!-- Team Section -->
-  <section  id="team" class="team-section">
+  <section id="team" class="team-section">
     <div class="team-card">
-      <img src="Screenshot 2025-01-05 at 6.11.57 PM.png" alt="Team Member 1">
-      <p>Krishnansh Puri</p>
-      <p>Web-Dev Lead</p>
+        <img src="Screenshot 2025-01-05 at 6.11.57 PM.png" alt="Team Member 1">
+        <p>Krishnansh Puri</p>
+        <p>Web-Dev Lead</p>
+        <div class="hover-text">
+            Krishnansh Puri is the Web-Dev Lead, responsible for creating the entire front-end design and user interface.
+        </div>
     </div>
     <div class="team-card">
-      <img src="Screenshot 2025-01-05 at 8.29.07 PM.png" alt="Team Member 2">
-      <p>Ankit Jaiswal</p>
-      <p>Back-End Lead</p>
+        <img src="Screenshot 2025-01-05 at 8.29.07 PM.png" alt="Team Member 2">
+        <p>Ankit Jaiswal</p>
+        <p>Back-End Lead</p>
+        <div class="hover-text">
+            Ankit Jaiswal is the Back-End Lead, managing server-side development and database integration.
+        </div>
     </div>
     <div class="team-card">
-      <img src="Screenshot 2025-01-05 at 8.25.20 PM.png" alt="Team Member 3">
-      <p>Kunal Kashyap</p>
-      <p>Lead</p>
+        <img src="Screenshot 2025-01-05 at 8.25.20 PM.png" alt="Team Member 3">
+        <p>Kunal Kashyap</p>
+        <p>Lead</p>
+        <div class="hover-text">
+            Kunal Kashyap is the Lead, leveraging AI/ML techniques to handle and analyze data effectively.
+        </div>
     </div>
     <div class="team-card">
-      <img src="Screenshot 2025-01-05 at 6.12.16 PM.png" alt="Team Member 4">
-      <p>Charanjot Singh</p>
-      <p>Co-Lead</p>
+        <img src="Screenshot 2025-01-05 at 6.12.16 PM.png" alt="Team Member 4">
+        <p>Charanjot Singh</p>
+        <p>Co-Lead</p>
+        <div class="hover-text">
+            Charanjot Singh is the Co-Lead, responsible for creating a chatbot AI assistant to enhance user interaction.
+        </div>
     </div>
-  </section>
+</section>
+
 
   <!-- Footer -->
   <footer>
