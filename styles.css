@@ -1,420 +1,344 @@
-/* Global Styles */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Poppins', sans-serif;
-  color: white;
-  background: black;
-  overflow-x: hidden; /* Prevent horizontal scroll */
-  animation: slideUp 1.s ease-out forwards; /* Apply slide-up animation */
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="logo.png" type="image/png" >
+  <link rel="shortcut icon" href="logo.png" type="image/png">
+  <title>Trend-Forge</title>
 
-html {
-  scroll-behavior: smooth;
-}
-
-@keyframes slideUp {
-  0% {
-    transform: translateY(100%);  /* Start from the bottom (off-screen) */
-  }
-  100% {
-    transform: translateY(0);  /* End at the original position */
-  }
-}
-html {
-  scroll-behavior: smooth;
-}
-.main-heading {
-  font-size: 3rem;
-  font-weight: bold;
-  text-align: center;
-  color: #ff69b4;
-  margin: 20px 0;
-  background: linear-gradient(90deg, #e96161, #eca8a8, #f8464f);
-  background-size: 200%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: twinkle 7s infinite linear;
-}
-
-@keyframes twinkle {
-  0% {
-    background-position: 0%;
-  }
-  100% {
-    background-position: 200%;
-  }
-}
-
-.sub-heading {
-  font-size: 1.5rem;
-  font-weight: 500;
-  text-align: center;
-  color: #e5b7ae;
-  margin-top: 10px;
-  animation: floatSubHeading 3s infinite ease-in-out;
-}
-
-@keyframes floatSubHeading {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(5px);
-  }
-  100% {
-    transform: translateY(0);
-  }
-}
-
-
-
-
-.content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  margin: 50px auto;
-  text-align: center;
-}
-
-.stars {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: black;
-  z-index: -1;
-  overflow: hidden;
-}
-
-.stars::before,
-.stars::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 200%;
-  height: 200%;
-  background: radial-gradient(circle, rgb(218, 123, 123) 1px, transparent 1px);
-  background-size: 50px 50px;
-  animation: stars-animation 50s linear infinite;
-}
-
-.stars::after {
-  background-size: 100px 100px;
-  animation-duration: 100s;
-  animation-direction: reverse;
-}
-
-@keyframes stars-animation {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(-50%, -50%);
-  }
-}
-
-  /* Navigation Bar */
-  .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: rgba(0, 0, 0, 0.5);
-  border-radius: 25px;
-  box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
-  margin: 20px auto;
-  width: 80%;
-}
-
-.navbar ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-.navbar ul li a {
-  text-decoration: none;
-  color: white;
-  transition: color 0.3s ease;
-}
-
-.navbar ul li a:hover {
-  color: #ff69b4;
-}
-
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
   
-  /* Welcome Section */
-  .welcome-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-    margin-top: 40px;
-  }
-  
-  .welcome-box {
-    width: 45%;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    border-bottom: 5px solid neon;
+  <div class="stars"></div>
+<div class="content">
+  <h1 class="main-heading">Welcome to Trend-Forge</h1>
+  <h2 class="sub-heading">Engage, Learn, and Grow</h2>
+ 
+</div>
+
+
+
+
+
+  <!-- Navigation Bar -->
+  <header class="navbar">
+    <div class="logo">Trend-Forge</div>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#team">Team</a></li>
+        <li><a href="#">Network Report</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Welcome Section -->
+  <section id="home" class="welcome-section">
+    <div class="welcome-box">
+      <h1>Welcome to Trend-Forge</h1>
+      <h2>Engage, Learn, and Grow</h2>
+      <p>Social media analysis plays a critical role in understanding the performance of content, identifying trends, and optimizing strategies for growth. By analyzing key metrics, we can determine what works and what doesn't, which ultimately drives network expansion and audience engagement.</p>
+    </div>
+    <div class="phone-card">
+      <img src="Screenshot 2025-01-05 at 6.09.41 PM.png" alt="Phone" class="phone-image">
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="feature" class="features-section">
+    <h2>Features of Trend-Forge</h2>
+    <div class="feature-card">
+      <h3>Real-time Analytics</h3>
+      <p>Monitor social media performance with live updates. Track user engagement and growth rates for any platform instantly.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Data-Driven Insights</h3>
+      <p>Leverage AI-powered insights to optimize your content strategy. Our app identifies trends and predicts future performance.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Multi-Platform Support</h3>
+      <p>Connect multiple social media accounts and track all performance metrics in one unified dashboard.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Custom Reports</h3>
+      <p>Generate tailored reports based on your preferred social media metrics, making data analysis easier and faster.</p>
+    </div>
     
-  }
-  
-  .welcome-box h1 {
-    font-size: 2rem;
-    font-weight: bold;
-  }
-  
-  .welcome-box h2 {
-    font-size: 1.5rem;
-    margin-top: 10px;
-  }
-  
-  .welcome-box p {
-    font-size: 1rem;
-    margin-top: 15px;
-  }
-  
-  .phone-card {
-    width: 45%;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-    border-bottom: 5px solid neon;
-    display: flex;
-    justify-content: center;
-   
-  }
-  
-  .phone-image {
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Features Section */
-  .features-section {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 40px;
-    border-bottom: #ff007f;
-  }
-  
-  .feature-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .feature-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
-  }
-  
+    <!-- Additional Small Cards for Engagement Suggestions -->
+    <div class="engagement-card">
+      <h3>Engage Your Audience</h3>
+      <p>Post consistently and interact with your followers to build stronger connections.</p>
+    </div>
+    <div class="engagement-card">
+      <h3>Optimize Content Timing</h3>
+      <p>Analyze when your audience is most active and schedule posts accordingly.</p>
+    </div>
+    <div class="engagement-card">
+      <h3>Collaborate with Influencers</h3>
+      <p>Partner with influencers to increase your reach and boost engagement rates.</p>
+    </div>
+    <div class="engagement-card">
+      <h3>Use Hashtags Wisely</h3>
+      <p>Research trending hashtags and use them strategically to expand your content reach.</p>
+    </div>
+  </section>
 
-  .engagement-card {
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .engagement-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
-  }
-  
-  
-  /* About Section */
-  .about-section {
-    display: flex;
-    justify-content: space-between;
-    padding: 40px;
-  }
-  
-  .about-box {
-    width: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    border-right: 5px solid neon;
-    box-shadow: 0 0 15px 5px rgba(255, 0, 127, 0.7);
-  }
-  
-  .tech-slider {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
-    grid-auto-rows: 100px; /* Set height for rows */
-    gap: 20px;
-    position: absolute;
-    right: 140px; /* Align to the right side */
-    width: 350px; /* Adjust width for all columns to fit */
-    height: 350px; /* Adjust height for rows to fit */
-    animation: slider 6s infinite ease-in-out; /* Sliding animation */
-  }
-  
-  @keyframes slider {
-    0% {
-      transform: translateY(0); /* Start at the top */
-    }
-    50% {
-      transform: translateY(-25%); /* Move to the middle of the sliding area */
-    }
-    100% {
-      transform: translateY(0); /* Return to the top */
-    }
-  }
-  
-  .tech-box {
-    background: rgba(255, 255, 255, 0.2);
-    padding: 15px;
-    border-radius: 10px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  
-  
-  /* Statistics Section */
-  .statistics-section {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 40px;
-   
-  }
-  
-  .stat-card {
-    width: 200px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 15px 5px rgba(53, 48, 50, 0.7);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .stat-card h3 {
-    font-size: 2rem;
-    color: #ff007f;
-  }
+  <!-- About Section -->
+  <section id="about"   class ="about-section">
+    <div class="about-box">
+      <h2>About Our Website</h2>
+      <p>Our website provides a comprehensive solution for social media performance analysis, combining cutting-edge technologies like Langflow and ChatGPT. With real-time data processing, users can gain insights into engagement, growth, and content effectiveness. By tracking metrics across platforms, users can optimize their social media strategies for maximum impact.</p>
+    </div>
+    <div class="tech-slider">
+      <div class="tech-box">Langflow</div>
+      <div class="tech-box">ChatGPT</div>
+      <div class="tech-box">HTML</div>
+      <div class="tech-box">CSS</div>
+      <div class="tech-box">JavaScript</div>
+      <div class="tech-box">React</div>
+      <div class="tech-box">Node.js</div>
+      <div class="tech-box">Python</div>
+    </div>
+  </section>
 
-  .stat-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
-  }
-  
-  /* Team Section */
-  .team-section {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 40px;
-}
+  <!-- Statistics Section -->
+  <section class="statistics-section">
+    <h2>Our Impact</h2>
+    <div class="stat-card">
+      <h3>1M+</h3>
+      <p>Social Media Accounts Analyzed</p>
+    </div>
+    <div class="stat-card">
+      <h3>500K+</h3>
+      <p>Data Points Processed Daily</p>
+    </div>
+    <div class="stat-card">
+      <h3>95%</h3>
+      <p>Accuracy in Performance Predictions</p>
+    </div>
+    <div class="stat-card">
+      <h3>99%</h3>
+      <p>Customer Satisfaction</p>
+    </div>
+  </section>
 
-.team-card {
-    position: relative; /* To position the hover text inside the card */
-    width: 200px;
-    background: rgba(255, 255, 255, 0.1);
-    padding: 20px;
-    border-radius: 10px;
-    text-align: center;
-    border-bottom: 5px solid neon;
-    box-shadow: 0 0 15px 5px rgba(216, 237, 32, 0.7);
-    overflow: hidden; /* To hide the hover text initially */
-}
+  <!-- Team Section -->
+  <section id="team" class="team-section">
+    <div class="team-card">
+      <img src="images/kunal.jpg" alt="Team Member 3">
+      <p>Kunal Kashyap</p>
+      <p>Lead</p>
+      <div class="hover-text">
+          Kunal Kashyap is the Lead, leveraging AI/ML techniques to handle and analyze data effectively.
+      </div>
+  </div>
 
-.team-card img {
-    width: 120px; /* Set a smaller width */
-    height: 120px; /* Set a smaller height */
-    border-radius: 50%; /* Keeps the circular shape */
-    object-fit: cover; /* Ensures the image fits without distortion */
-    transition: transform 0.3s ease;
-}
+  <div class="team-card">
+    <img src="images/charanjot.jpg" alt="Team Member 4">
+    <p>Charanjot Singh</p>
+    <p>Co-Lead</p>
+    <div class="hover-text">
+        Charanjot Singh is the Co-Lead, responsible for creating a chatbot AI assistant to enhance user interaction.
+    </div>
+</div>
 
-.team-card:hover img {
-    transform: scale(1.1);
-}
+    <div class="team-card">
+        <img src="images/krishnan.jpeg" alt="Team Member 1">
+        <p>Krishnansh Puri</p>
+        <p>Web-Dev Lead</p>
+        <div class="hover-text">
+            Krishnansh Puri
+        </div>
+    </div>
+    <div class="team-card">
+        <img src="images/ankit.jpg" alt="Team Member 2">
+        <p>Ankit Jaiswal</p>
+        <p>Back-End Lead</p>
+        <div class="hover-text">
+            Ankit Jaiswal is the Back-End Lead, managing server-side development and database integration.
+        </div>
+    </div>
 
-.team-card p {
-    margin: 10px 0;
-}
+<<<<<<< HEAD
+  
+</section>
+=======
+    <!-- Header Section -->
+    <header>
+        <div class="logo-container">
+            <img src="Logo.png" alt="Trend-Forge Logo" class="logo">  <!-- Replace with your logo -->
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="network_report.html">Network Report</a></li>
+                <li><a href="#team">Team</a></li>
+            </ul>
+        </nav>
+    </header>
+>>>>>>> 4ef7e5980727499c376b4c9685f2b961b8d2de47
 
-/* Hover Effect Text */
-.team-card .hover-text {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 20px; /* Add extra padding */
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease;
-  border-radius: 10px; /* Matches the card's border-radius */
-  box-sizing: border-box; /* Ensures padding doesn't overflow */
-  overflow: hidden; /* Prevents any content from spilling out */
-}
 
-.team-card:hover .hover-text {
-    opacity: 1; /* Show text on hover */
-}
+<<<<<<< HEAD
+  <!-- Footer -->
+  <footer>
+    <div class="footer-column">
+      <h3>Contact Us</h3>
+      <ul>
+        <li><a href="#">Email</a></li>
+        <li><a href="#">Phone</a></li>
+        <li><a href="#">Location</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>References</h3>
+      <ul>
+        <li><a href="#">Social Media Tools</a></li>
+        <li><a href="#">Growth Hacks</a></li>
+        <li><a href="#">Data Analytics Research</a></li>
+      </ul>
+    </div>
+    <div class="footer-column">
+      <h3>Researches</h3>
+      <ul>
+        <li><a href="#">Case Studies</a></li>
+        <li><a href="#">Market Trends</a></li>
+        <li><a href="#">Audience Behavior</a></li>
+      </ul>
+    </div>
+  </footer>
+=======
+        <div class="intro-text">
+            <p>
+                Trend-Forge is designed to enhance your social media performance with powerful analytics and insights. Whether you are tracking growth, engagement, or response rates, Trend-Forge helps you improve your digital presence across platforms like Instagram, Twitter, LinkedIn, and Facebook.
+                <br><br>
+                Our mission is to make data-driven insights accessible, allowing you to track your network growth, optimize engagement strategies, and respond effectively to user interactions. Trend-Forge empowers marketers, brands, and influencers with the tools they need to succeed in the ever-evolving digital space.
+            </p>
+        </div>
+
+        <div class="actions">
+            <button class="action-btn">Get Started</button>
+            <button class="action-btn">View Demo</button>
+        </div>
+    </section>
+    <br>
+    <br>
+
+    <section id = "about" class = "about" style= " background-image: url('background.jpg') ; background-size: cover; background-repeat: no-repeat">
+  <br> <br><br> <br>
+  <h1 style = "text-align:center;">About</h1>
+<br> <br>
+  <p>
+  TrendForge is an innovative AI-driven web application designed to help individuals, influencers, and businesses optimize their social media presence. By leveraging advanced artificial intelligence algorithms, TrendForge provides deep insights into social media trends, user engagement, and the types of posts that capture the most attention.
+  </p>
+  <br> <br>
+  <div class="grid-container">
+    <div class="grid-box">Social Media Usage Tracking</div>
+    <div class="grid-box">Insightful Analytics</div>
+    <div class="grid-box">AI-Powered Chatbot</div>
+    <div class="grid-box">User-Friendly Interface</div>
+  </div>
+  <br> <br><br> <br>
+</section>
+<section id = "team">
+<br><br><br><br>
+<div class="content">
+        <h1 class="heading">Team</h1>
+        <br><br><br><br>
+        <div class="team-images">
+            <!--1-->
+            <div class="image-description1"><img src="kunal.jpg" alt="Description"
+                    style="display: inline-block; width: 240px; height: 240px; vertical-align: middle; margin-right: 1px;border: 2px solid white;border-radius: 50px;">
+                <h3>Kunal Kashyap</h3>
+                <h4>lead</h4>
+            </div>
+            <div class="image-description2"><img src="charanjot.jpg" alt="Description"
+                    style="display: inline-block; width: 240px; height: 240px; vertical-align: middle; margin-right: 1px;border: 2px solid white;border-radius: 50px;">
+                <h3>Charanjot </h3>
+                <h4>Co-lead</h4>
+            </div>
+            <div class="image-description3"><img src="ankit.jpg" alt="Description"
+                    style="display: inline-block; width: 240px; height: 240px; vertical-align: middle; margin-right: 1px;border: 2px solid white;border-radius: 50px;">
+                <h3>Ankit Jaiswal</h3>
+                <h4>Web-Dev lead</h4>
+            </div>
+            <div class="image-description4"><img src="krishnansh.jpeg" alt="Description"
+                    style="display: inline-block; width: 240px; height: 240px; vertical-align: middle; margin-right: 1px;border: 2px solid white;border-radius: 50px;">
+                <h3>Krishnansh Puri</h3>
+                <h4>Web-Dev lead</h4>
+            </div>
+        </div>
+        <br><br><br><br>
+</section>
+
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li><a href="tel:+18668783231">1-866-878-3231</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Office Locations</h4>
+                <ul>
+                    <li><a href="#">New York</a></li>
+                    <li><a href="#">San Francisco</a></li>
+                    <li><a href="#">Chicago</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Support</h4>
+                <ul>
+                    <li><a href="#">Help Center</a></li>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">System Status</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Solutions</h4>
+                <ul>
+                    <li><a href="#">Enterprise</a></li>
+                    <li><a href="#">Agencies</a></li>
+                    <li><a href="#">Small and Medium Businesses</a></li>
+                    <li><a href="#">Social Management</a></li>
+                   
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Industries</h4>
+                <ul>
+                    <li><a href="#">Premier Success</a></li>
+                    <li><a href="#">Social Analytics</a></li>
+                    <li><a href="#">Social Engagement</a></li>
+                    <li><a href="#">Social Publishing</a></li>
+                    
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Integrations</h4>
+                <ul>
+                    <li><a href="#">Facebook Management</a></li>
+                    <li><a href="#">X Management</a></li>
+                    <li><a href="#">Instagram Management</a></li>
+                    <li><a href="#">LinkedIn Management</a></li>
+                   
+                </ul>
+            </div>
+            
+        <p>&copy; 2025 Trend-Forge. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+>>>>>>> 4ef7e5980727499c376b4c9685f2b961b8d2de47
 
   
-  /* Footer */
-  footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 40px;
-    background: rgba(255, 255, 255, 0.1);
-    
-  
-  .footer-column {
-    width: 30%;
-  }
-  
-  .footer-column h3 {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  .footer-column ul li a {
-    text-decoration: none;
-    color: white;
-    position: relative;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-column ul li a::after {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background: #ff69b4;
-    transition: width 0.3s ease;
-  }
-  
-  .footer-column ul li a:hover {
-    color: #ff69b4;
-  }
-  
-  .footer-column ul li a:hover::after {
-    width: 100%;
-  }
-  }      
+</body>
+</html>
