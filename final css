@@ -34,7 +34,7 @@ html {
   background-size: 200%;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: twinkle 3s infinite linear;
+  animation: twinkle 7s infinite linear;
 }
 
 @keyframes twinkle {
@@ -318,9 +318,10 @@ html {
     display: flex;
     justify-content: space-evenly;
     padding: 40px;
-  }
-  
-  .team-card {
+}
+
+.team-card {
+    position: relative; /* To position the hover text inside the card */
     width: 200px;
     background: rgba(255, 255, 255, 0.1);
     padding: 20px;
@@ -328,26 +329,50 @@ html {
     text-align: center;
     border-bottom: 5px solid neon;
     box-shadow: 0 0 15px 5px rgba(216, 237, 32, 0.7);
-  }
-  
-  .team-card img {
-    width: 120px;   /* Set a smaller width */
-    height: 120px;  /* Set a smaller height */
+    overflow: hidden; /* To hide the hover text initially */
+}
+
+.team-card img {
+    width: 120px; /* Set a smaller width */
+    height: 120px; /* Set a smaller height */
     border-radius: 50%; /* Keeps the circular shape */
     object-fit: cover; /* Ensures the image fits without distortion */
     transition: transform 0.3s ease;
 }
 
-
-  
-  .team-card:hover img {
+.team-card:hover img {
     transform: scale(1.1);
-  }
-  
-  
-  .team-card p {
+}
+
+.team-card p {
     margin: 10px 0;
-  }
+}
+
+/* Hover Effect Text */
+.team-card .hover-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark overlay */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px; /* Add extra padding */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease;
+  border-radius: 10px; /* Matches the card's border-radius */
+  box-sizing: border-box; /* Ensures padding doesn't overflow */
+  overflow: hidden; /* Prevents any content from spilling out */
+}
+
+.team-card:hover .hover-text {
+    opacity: 1; /* Show text on hover */
+}
+
   
   /* Footer */
   footer {
