@@ -8,7 +8,7 @@
   <title>Trend-Forge</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="m.css">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   
@@ -31,7 +31,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#team">Team</a></li>
-        <li><a href="#">Network Report</a></li>
+        <li><a href="dashboard.html">Network Report</a></li>
       </ul>
     </nav>
   </header>
@@ -39,9 +39,18 @@
   <!-- Welcome Section -->
   <section id="home" class="welcome-section">
     <div class="welcome-box">
-      <h1>Welcome to Trend-Forge</h1>
-      <h2>Engage, Learn, and Grow</h2>
       <p>Social media analysis plays a critical role in understanding the performance of content, identifying trends, and optimizing strategies for growth. By analyzing key metrics, we can determine what works and what doesn't, which ultimately drives network expansion and audience engagement.</p>
+      <div class="container">
+        <a href="dashboard.html" class="button">
+          Get Started
+          <span class="arrow"></span>
+        </a>&nbsp;&nbsp;&nbsp;
+        <a href="#" class="button">
+          Demo Video
+          <span class="arrow"></span>
+        </a>
+      </div>
+    
     </div>
     <div class="phone-card">
       <img src="Screenshot 2025-01-05 at 6.09.41 PM.png" alt="Phone" class="phone-image">
@@ -49,8 +58,9 @@
   </section>
 
   <!-- Features Section -->
+  <h1 style= "text-align: center;">Features of Trend-Forge</h1>
   <section id="feature" class="features-section">
-    <h2>Features of Trend-Forge</h2>
+    
     <div class="feature-card">
       <h3>Real-time Analytics</h3>
       <p>Monitor social media performance with live updates. Track user engagement and growth rates for any platform instantly.</p>
@@ -63,10 +73,6 @@
       <h3>Multi-Platform Support</h3>
       <p>Connect multiple social media accounts and track all performance metrics in one unified dashboard.</p>
     </div>
-    <div class="feature-card">
-      <h3>Custom Reports</h3>
-      <p>Generate tailored reports based on your preferred social media metrics, making data analysis easier and faster.</p>
-    </div>
     
     <!-- Additional Small Cards for Engagement Suggestions -->
     <div class="engagement-card">
@@ -74,40 +80,29 @@
       <p>Post consistently and interact with your followers to build stronger connections.</p>
     </div>
     <div class="engagement-card">
-      <h3>Optimize Content Timing</h3>
-      <p>Analyze when your audience is most active and schedule posts accordingly.</p>
-    </div>
-    <div class="engagement-card">
       <h3>Collaborate with Influencers</h3>
       <p>Partner with influencers to increase your reach and boost engagement rates.</p>
     </div>
-    <div class="engagement-card">
-      <h3>Use Hashtags Wisely</h3>
-      <p>Research trending hashtags and use them strategically to expand your content reach.</p>
-    </div>
   </section>
-
+  <!-- <div class="tech-slider">
+    <div class="tech-box">Langflow</div>
+    <div class="tech-box">ChatGPT</div>
+    <div class="tech-box">HTML</div>
+    <div class="tech-box">CSS</div>
+    <div class="tech-box">JavaScript</div>
+    <div class="tech-box">React</div>
+    <div class="tech-box">Node.js</div>
+    <div class="tech-box">Python</div>
+  </div> -->
   <!-- About Section -->
   <section id="about"   class ="about-section">
     <div class="about-box">
       <h2>About Our Website</h2>
       <p>Our website provides a comprehensive solution for social media performance analysis, combining cutting-edge technologies like Langflow and ChatGPT. With real-time data processing, users can gain insights into engagement, growth, and content effectiveness. By tracking metrics across platforms, users can optimize their social media strategies for maximum impact.</p>
-    </div>
-    <div class="tech-slider">
-      <div class="tech-box">Langflow</div>
-      <div class="tech-box">ChatGPT</div>
-      <div class="tech-box">HTML</div>
-      <div class="tech-box">CSS</div>
-      <div class="tech-box">JavaScript</div>
-      <div class="tech-box">React</div>
-      <div class="tech-box">Node.js</div>
-      <div class="tech-box">Python</div>
-    </div>
-  </section>
+  
 
   <!-- Statistics Section -->
   <section class="statistics-section">
-    <h2>Our Impact</h2>
     <div class="stat-card">
       <h3>1M+</h3>
       <p>Social Media Accounts Analyzed</p>
@@ -125,41 +120,47 @@
       <p>Customer Satisfaction</p>
     </div>
   </section>
+</section>
+</div>
 
   <!-- Team Section -->
   <section id="team" class="team-section">
     <div class="team-card">
-        <img src="Screenshot 2025-01-05 at 6.11.57 PM.png" alt="Team Member 1">
+      <img src="images/kunal.jpg" alt="Team Member 3">
+      <p>Kunal Kashyap</p>
+      <p>Lead</p>
+      <div class="hover-text">
+          Kunal Kashyap is the Lead, leveraging AI/ML techniques to handle and analyze data effectively.
+      </div>
+  </div>
+
+  <div class="team-card">
+    <img src="images/charanjot.jpg" alt="Team Member 4">
+    <p>Charanjot Singh</p>
+    <p>Co-Lead</p>
+    <div class="hover-text">
+        Charanjot Singh is the Co-Lead, responsible for creating a chatbot AI assistant to enhance user interaction.
+    </div>
+</div>
+
+    <div class="team-card">
+        <img src="images/krishnan.jpeg" alt="Team Member 1">
         <p>Krishnansh Puri</p>
         <p>Web-Dev Lead</p>
         <div class="hover-text">
-            Krishnansh Puri is the Web-Dev Lead, responsible for creating the entire front-end design and user interface.
+            Krishnansh Puri is the Web-Dev lead, responsible for creating the entire front-end design and user interface. 
         </div>
     </div>
     <div class="team-card">
-        <img src="Screenshot 2025-01-05 at 8.29.07 PM.png" alt="Team Member 2">
+        <img src="images/ankit.jpg" alt="Team Member 2">
         <p>Ankit Jaiswal</p>
         <p>Back-End Lead</p>
         <div class="hover-text">
             Ankit Jaiswal is the Back-End Lead, managing server-side development and database integration.
         </div>
     </div>
-    <div class="team-card">
-        <img src="Screenshot 2025-01-05 at 8.25.20 PM.png" alt="Team Member 3">
-        <p>Kunal Kashyap</p>
-        <p>Lead</p>
-        <div class="hover-text">
-            Kunal Kashyap is the Lead, leveraging AI/ML techniques to handle and analyze data effectively.
-        </div>
-    </div>
-    <div class="team-card">
-        <img src="Screenshot 2025-01-05 at 6.12.16 PM.png" alt="Team Member 4">
-        <p>Charanjot Singh</p>
-        <p>Co-Lead</p>
-        <div class="hover-text">
-            Charanjot Singh is the Co-Lead, responsible for creating a chatbot AI assistant to enhance user interaction.
-        </div>
-    </div>
+
+  
 </section>
 
 
@@ -190,8 +191,7 @@
       </ul>
     </div>
   </footer>
-<!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
+  <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/01/05/14/20250105142152-5RC6DD4S.js"></script> -->
-  
 </body>
 </html>
