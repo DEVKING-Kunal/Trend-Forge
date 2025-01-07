@@ -48,21 +48,67 @@ st.markdown("""
 # st.markdown('<style>div.block-container{padding-top:2rem}</style>', unsafe_allow_html=True)
 
 # Logo (Replace 'logo.png' with the path to your logo)
-st.image(r"images\Logo.png", width=570)
+
+st.image("logo.png", width=570)
+
+
 st.markdown('<style>div.block-container{padding-top:0rem}</style>', unsafe_allow_html=True)
-st.markdown("<h1>Dashboard</h1> ", unsafe_allow_html=True)
+
 st.markdown('<style>div.block-container{padding-bottom:2rem}</style>', unsafe_allow_html=True)
+# Add custom CSS for upper-right alignment and hover glow
+# Add custom CSS for hover glow effect
+st.markdown("""
+    <style>
+        .header-title {
+            font-size: 36px; /* Adjust title size */
+            font-weight: bold;
+            color: #333; /* Default text color */
+            margin: 0;
+            
+            transition: all 0.3s ease-in-out; /* Smooth hover effect */
+        }
+        .header-title:hover {
+            color: rgba(255, 69, 0, 1); /* Glowing text color */
+            text-shadow: 0 0 2px rgba(255, 69, 0, 1); /* Glowing effect */
+        }
+    </style>
+    <h1 class="header-title">Dashboard 📊</h1>
+""", unsafe_allow_html=True)
+
 
 
 # File Uploader
 fl = st.file_uploader(":file_folder: Upload a file", type=(["csv", "xlsx"]))
+
+
+# Reference columns from output.csv
+# Reference columns from output.csv
+# Reference columns from output.csv
+expected_columns = [
+    "_id", "Posting_Date", "Total_Reactions", "Total_Comments", "Total_Shares", 
+    "Likes", "Loves", "Wows", "Hahas", "Sads", "Angrys", 
+    "Is_Link", "Is_Photo", "Is_Status", "Is_Video", "Is_Carousel", "Is_Reel"
+]
+
+# File handling
 if fl is not None:
     filename = fl.name
-    st.write(filename)
+    st.write(f"Uploaded File: {filename}")
     df = pd.read_csv(fl, encoding="ISO-8859-1")
+    
+    # Check if columns match
+    if set(df.columns) != set(expected_columns):
+        st.warning("⚠️ Uploaded file's columns do not match the expected format of `output.csv`. Please refine your data.")
+    else:
+        st.subheader("Preview of Uploaded Data")
+        st.dataframe(df.head(5))
 else:
-    os.chdir(r"C:\Users\HP\Desktop\Trend Forge\Trend-Forge\Trend-Forge\output.csv")
+    # Use default data when no file is uploaded
+    st.subheader("Preview of Default Data")
+    os.chdir(r"C:\Users\HP\Desktop\Trend Forge\dashboard")
     df = pd.read_csv("output.csv", encoding="ISO-8859-1")
+    st.dataframe(df.head(5))
+
 
 # Date Conversion
 df["Posting_Date"] = pd.to_datetime(df["Posting_Date"], errors="coerce").dt.date
@@ -284,27 +330,8 @@ csv = df.to_csv(index=False).encode("utf-8")
 st.download_button("Download Filtered Data as CSV", data=csv, file_name="filtered_data.csv", mime="text/csv")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+st.markdown("""
+    <div style="position: fixed; bottom: 0; width: 100%; text-align: left; padding: 0px; font-size: 17px; font-weight: bold; background-color: black; color: white; text-shadow: 0 0 0px gold, 0 0 0px gold, 0 0 2px gold; z-index: 999;">
+        © 2025 Made with chai, code, and a pinch of magic by Kunal Kashyap. All rights reserved.
+    </div>
+""", unsafe_allow_html=True)
