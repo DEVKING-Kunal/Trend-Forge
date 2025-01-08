@@ -30,7 +30,7 @@ body {
     text-align: center;
     color: #ff69b4;
     margin: 20px 0;
-    background: linear-gradient(90deg, #e96161, #eca8a8, #f8464f);
+    background: linear-gradient(90deg, #f1b615, #f50909, #f70df7);
     background-size: 200%;
 
     /* Add standard property */
@@ -125,7 +125,7 @@ body {
   }
   
     /* Navigation Bar */
-    .navbar {
+    /* .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -135,12 +135,27 @@ body {
     box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
     margin: 20px auto;
     width: 80%;
-  }
+  } */
+  .navbar {
+    position: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2px;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.5);;
+    padding: 15px 20px;
+    transition: transform 0.3s ease;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.8);
+    margin: 20px auto;
+    width: 80%;
+   
+}
   
   .navbar ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 110px;
   }
   
   .navbar ul li a {
@@ -188,18 +203,21 @@ body {
     
     .phone-card {
       width: 45%;
-      padding: 20px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 10px;
-      border-bottom: 5px solid neon;
+      padding: 2px;
       display: flex;
       justify-content: center;
+      border-radius: 2%;
      
+    }
+    .phone-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
     }
     
     .phone-image {
       max-width: 100%;
-      height: auto;
+      height:350px;
+      border-radius: 2%;
     }
     
     /* Features Section */
@@ -239,7 +257,41 @@ body {
       box-shadow: 0 8px 16px rgba(255, 255, 255, 0.4);
     }
     
-    
+    /* slide show */
+    .slideshow-container {
+      width: 100%;
+      height: 60px; /* Adjust the height as needed */
+      overflow: hidden;
+      /* background-color: #333; */
+      display: flex;
+      align-items: center;
+      position: relative;
+  }
+  
+  .slideshow-content {
+      display: flex;
+      animation: scrollLeft 15s linear infinite;
+      white-space: nowrap;
+  }
+  
+  .slide {
+      color: white;
+      
+      padding: 10px 20px;
+      margin-right: 20px; /* Space between slides */
+      border-radius: 5px;
+      white-space: nowrap; /* Prevents text wrapping */
+      font-size: 18px;
+  }
+  
+  @keyframes scrollLeft {
+    0% {
+      transform: translateX(0);
+  }
+  100% {
+      transform: translateX(-50%);
+  }
+  }
     /* About Section */
     .about-section {
       display: inline-flex;
@@ -253,32 +305,10 @@ body {
       padding: 20px;
       border-radius: 10px;
       border-right: 5px solid neon;
+      text-align: center;
       box-shadow: 0 0 15px 5px rgba(255, 0, 127, 0.7);
     }
     
-    .tech-slider {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr); /* 3 columns */
-      grid-auto-rows: 100px; /* Set height for rows */
-      gap: 20px;
-      position: absolute;
-      right: 140px; /* Align to the right side */
-      width: 350px; /* Adjust width for all columns to fit */
-      height: 350px; /* Adjust height for rows to fit */
-      animation: slider 6s infinite ease-in-out; /* Sliding animation */
-    }
-    
-    @keyframes slider {
-      0% {
-        transform: translateY(0); /* Start at the top */
-      }
-      50% {
-        transform: translateY(-25%); /* Move to the middle of the sliding area */
-      }
-      100% {
-        transform: translateY(0); /* Return to the top */
-      }
-    }
     
     .tech-box {
       background: rgba(255, 255, 255, 0.2);
@@ -325,6 +355,9 @@ body {
       display: flex;
       justify-content: space-evenly;
       padding: 40px;
+      border-right: 5px solid neon;
+      text-align: center;
+    
   }
   
   .team-card {
@@ -339,13 +372,12 @@ body {
       overflow: hidden; /* To hide the hover text initially */
   }
   
-  .team-card img {
-      width: 160px; /* Set a smaller width */
-      height: 160px; /* Set a smaller height */
-      border-radius: 10px; /* Keeps the circular shape */
-       /* Ensures the image fits without distortion */
+  /* .team-card img {
+      width: 160px; 
+      height: 160px; 
+      border-radius: 10px;
       transition: transform 0.3s ease;
-  }
+  } */
   
   .team-card:hover img {
       transform: scale(1.1);
@@ -424,23 +456,12 @@ body {
     .footer-column ul li a:hover::after {
       width: 100%;
     }
-    /* Center the button on the page */
-/* body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  margin: 0;
-  background-color: #f0f0f0;
-} */
-
-/* Button styling */
 .button {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   padding: 12px 20px;
-  background-color: red;
+  background-color: rgba(238, 13, 13, 0.856);
   color: white;
   font-size: 16px;
   font-weight: bold;
@@ -456,7 +477,7 @@ body {
 /* Hover effect for the button */
 .button:hover {
   background-color: black;
-  color: red;
+  color: rgb(248, 15, 15);
 }
 
 /* Arrow styling */
