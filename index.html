@@ -1,37 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="logo.png" type="image/png" >
+  <link rel="icon" href="logo.png" type="image/png">
   <link rel="shortcut icon" href="logo.png" type="image/png">
   <title>Trend-Forge</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/png" href="images/fevicon.png">
 </head>
+
 <body>
-  
   <div class="stars"></div>
-<div class="content">
-  <h1 class="main-heading">Welcome to Trend-Forge</h1>
-  <h2 class="sub-heading">Engage, Learn, and Grow</h2>
- 
-</div>
+  <div class="content">
 
-
-
-
+    <span style="display: inline-flex; align-items: center;">
+      <h1 class="main-heading">Welcome to</h1><img src="images\Logo.png" height="80px" width="450px">
+    </span>
+    <h2 class="sub-heading">Engage, Learn, and Grow</h2>
+    <br><br><br><br>
+  </div>
 
   <!-- Navigation Bar -->
-  <header class="navbar">
-    <div class="logo">Trend-Forge</div>
+  <header id="navbar" class="navbar">
     <nav>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#team">Team</a></li>
-        <li><a href="dashboard.html">Network Report</a></li>
+        <li><span style="display: inline-flex; align-items: center;"><img src="images\home.jpg" height="20px"
+              width="20px">&nbsp;<a href="#home">
+              <h3>Home</h3>
+            </a></span></li>
+        <li><span style="display: inline-flex; align-items: center;"><img src="images\info.jpeg" height="20px"
+              width="20px">&nbsp;<a href="#about">
+              <h3>About</h3>
+            </a></span></li>
+
+        <li><span style="display: inline-flex; align-items: center;"><img src="images\team.jpeg" height="30px"
+              width="30px">&nbsp;<a href="#team">
+              <h3>Team</h3>
+            </a></span></li>
+        <li><a href="#" class="button">
+            Get Started
+            <span class="arrow"></span>
+          </a></li>
       </ul>
     </nav>
   </header>
@@ -39,7 +52,10 @@
   <!-- Welcome Section -->
   <section id="home" class="welcome-section">
     <div class="welcome-box">
-      <p>Social media analysis plays a critical role in understanding the performance of content, identifying trends, and optimizing strategies for growth. By analyzing key metrics, we can determine what works and what doesn't, which ultimately drives network expansion and audience engagement.</p>
+      <h1>Why TrendForge ?</h1>
+      <p>Social media analysis plays a critical role in understanding the performance of content, identifying trends,
+        and optimizing strategies for growth. By analyzing key metrics, we can determine what works and what doesn't,
+        which ultimately drives network expansion and audience engagement.</p>
       <div class="container">
         <a href="dashboard.html" class="button">
           Get Started
@@ -50,30 +66,32 @@
           <span class="arrow"></span>
         </a>
       </div>
-    
+
     </div>
     <div class="phone-card">
-      <img src="Screenshot 2025-01-05 at 6.09.41 PM.png" alt="Phone" class="phone-image">
+      <img src="images\dashboard.jpeg" alt="Phone" class="phone-image">
     </div>
   </section>
 
   <!-- Features Section -->
-  <h1 style= "text-align: center;">Features of Trend-Forge</h1>
+  <h1 style="text-align: center;">Features of Trend-Forge</h1>
   <section id="feature" class="features-section">
-    
+
     <div class="feature-card">
       <h3>Real-time Analytics</h3>
-      <p>Monitor social media performance with live updates. Track user engagement and growth rates for any platform instantly.</p>
+      <p>Monitor social media performance with live updates. Track user engagement and growth rates for any platform
+        instantly.</p>
     </div>
     <div class="feature-card">
       <h3>Data-Driven Insights</h3>
-      <p>Leverage AI-powered insights to optimize your content strategy. Our app identifies trends and predicts future performance.</p>
+      <p>Leverage AI-powered insights to optimize your content strategy. Our app identifies trends and predicts future
+        performance.</p>
     </div>
     <div class="feature-card">
       <h3>Multi-Platform Support</h3>
       <p>Connect multiple social media accounts and track all performance metrics in one unified dashboard.</p>
     </div>
-    
+
     <!-- Additional Small Cards for Engagement Suggestions -->
     <div class="engagement-card">
       <h3>Engage Your Audience</h3>
@@ -84,95 +102,244 @@
       <p>Partner with influencers to increase your reach and boost engagement rates.</p>
     </div>
   </section>
-  <!-- <div class="tech-slider">
-    <div class="tech-box">Langflow</div>
-    <div class="tech-box">ChatGPT</div>
-    <div class="tech-box">HTML</div>
-    <div class="tech-box">CSS</div>
-    <div class="tech-box">JavaScript</div>
-    <div class="tech-box">React</div>
-    <div class="tech-box">Node.js</div>
-    <div class="tech-box">Python</div>
-  </div> -->
-  <!-- About Section -->
-  <section id="about"   class ="about-section">
-    <div class="about-box">
-      <h2>About Our Website</h2>
-      <p>Our website provides a comprehensive solution for social media performance analysis, combining cutting-edge technologies like Langflow and ChatGPT. With real-time data processing, users can gain insights into engagement, growth, and content effectiveness. By tracking metrics across platforms, users can optimize their social media strategies for maximum impact.</p>
-  
-
-  <!-- Statistics Section -->
-  <section class="statistics-section">
-    <div class="stat-card">
-      <h3>1M+</h3>
-      <p>Social Media Accounts Analyzed</p>
-    </div>
-    <div class="stat-card">
-      <h3>500K+</h3>
-      <p>Data Points Processed Daily</p>
-    </div>
-    <div class="stat-card">
-      <h3>95%</h3>
-      <p>Accuracy in Performance Predictions</p>
-    </div>
-    <div class="stat-card">
-      <h3>99%</h3>
-      <p>Customer Satisfaction</p>
-    </div>
-  </section>
-</section>
-</div>
-
-  <!-- Team Section -->
-  <section id="team" class="team-section">
-    <div class="team-card">
-      <img src="images/kunal.jpg" alt="Team Member 3">
-      <p>Kunal Kashyap</p>
-      <p>Lead</p>
-      <div class="hover-text">
-          Kunal Kashyap is the Lead, leveraging AI/ML techniques to handle and analyze data effectively.
+  <div class="slideshow-container">
+    <div class="slideshow-content">
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/pythoned.png" height="30px" width="30px">
+            <h3>PYTHON</h3>
+          </span></center>
       </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img src="images/html.png"
+              height="30px" width="30px">
+            <h3>HTML</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img src="images/css.png"
+              height="30px" width="30px">
+            <h3>CSS</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/javscript.png" height="30px" width="30px">
+            <h3>JAVASCRIPT</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/react-removebg-preview.png" height="30px" width="30px">
+            <h3>REACT</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/aws-logo-removebg-preview.png" height="30px" width="30px">
+            <h3>AWS</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/open-ai.png" height="30px" width="30px">
+            <h3>OPENAI</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/langflow.png" height="30px" width="30px">
+            <h3>LANGFLOW</h3>
+          </span></center>
+      </div>
+      <!--  -->
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/astra_db.png" height="30px" width="30px">
+            <h3>ASTRA DB</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/datastax.png" height="25px" width="25px">
+            &nbsp;<h3>DATASTAX</h3></span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/pythoned.png" height="30px" width="30px">
+            <h3>PYTHON</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img src="images/html.png"
+              height="30px" width="30px">
+            <h3>HTML</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img src="images/css.png"
+              height="30px" width="30px">
+            <h3>CSS</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/javscript.png" height="30px" width="30px">
+            <h3>JAVASCRIPT</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/react-removebg-preview.png" height="30px" width="30px">
+            <h3>REACT</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/aws-logo-removebg-preview.png" height="30px" width="30px">
+            <h3>AWS</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/open-ai.png" height="30px" width="30px">
+            <h3>OPENAI</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/langflow.png" height="30px" width="30px">
+            <h3>LANGFLOW</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/astra_db.png" height="30px" width="30px">
+            <h3>ASTRA DB</h3>
+          </span></center>
+      </div>
+      <div class="slide">
+        <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+              src="images/datastax.png" height="25px" width="25px">
+            &nbsp;<h3>DATASTAX</h3></span></center>
+      </div>
+    </div>
   </div>
 
-  <div class="team-card">
-    <img src="images/charanjot.jpg" alt="Team Member 4">
-    <p>Charanjot Singh</p>
-    <p>Co-Lead</p>
-    <div class="hover-text">
-        Charanjot Singh is the Co-Lead, responsible for creating a chatbot AI assistant & logic building.
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="about-box">
+      <h2>About Our Website</h2>
+      <p>Our website provides a comprehensive solution for social media performance analysis, combining cutting-edge
+        technologies like Langflow and ChatGPT. With real-time data processing, users can gain insights into engagement,
+        growth, and content effectiveness. By tracking metrics across platforms, users can optimize their social media
+        strategies for maximum impact.</p>
+
+
+      <!-- Statistics Section -->
+      <section class="statistics-section">
+        <div class="stat-card">
+          <h3>1M+</h3>
+          <p>Social Media Accounts Analyzed</p>
+        </div>
+        &nbsp;&nbsp;
+        <div class="stat-card">
+          <h3>500K+</h3>
+          <p>Data Points Processed Daily</p>
+        </div>&nbsp;&nbsp;
+        <div class="stat-card">
+          <h3>95%</h3>
+          <p>Accuracy in Performance Predictions</p>
+        </div>&nbsp;&nbsp;
+        <div class="stat-card">
+          <h3>99%</h3>
+          <p>Customer Satisfaction</p>
+        </div>
+      </section>
+  </section>
+  </div>
+
+  <!-- Team Section -->
+  <center><span id = "team" style="display: inline-flex; align-items: center;text-align: center;"><img
+        src="images\techtroopers-removebg-preview.png" height="200px" width="200px">
+      <h2 class="main-heading">Behind the scenes</h2>
+    </span></center>
+  <section class="team-section">
+    <div class="team-card">
+      <img src="images/kunal.jpg" alt="Team Member 3"
+        style="width: 160px;height: 160px;border-radius: 10px;transition: transform 0.3s ease;">
+      <p>Kunal Kashyap</p>
+      <p>Lead</p>
+
+      <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+            src="images/cap-removebg-preview.png" height="20px" width="20px">
+          &nbsp;<p>NIT JALANDHAR'28</p></span></center>
+      <p><a href="https://www.linkedin.com/in/kunal-kashyap-6b3504316/"><img src="images/LINKEDIN-removebg-preview.png" height="25px" width="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="https://github.com/DEVKING-Kunal"><img src="images/git-removebg-preview.png" height="25px" width="25px"></a></p>
+      <!-- <div class="hover-text">
+         Kunal Kashyap is the Lead, leveraging AI/ML techniques to handle and analyze data effectively.
+          </div> -->
+
     </div>
-</div>
 
     <div class="team-card">
-        <img src="images/krishnan.jpeg" alt="Team Member 1">
-        <p>Krishnansh Puri</p>
-        <p>Web-Dev Lead</p>
-        <div class="hover-text">
+      <img src="images/charanjot.jpg" alt="Team Member 4"
+        style="width: 160px;height: 160px;border-radius: 10px;transition: transform 0.3s ease;">
+      <p>Charanjot Singh</p>
+      <p>Co-Lead</p>
+      <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+            src="images/cap-removebg-preview.png" height="20px" width="20px">
+          &nbsp;<p>NIT JALANDHAR'28</p></span></center>
+      <p><a href="https://www.linkedin.com/in/charanjot-singh-402412310/"><img src="images/LINKEDIN-removebg-preview.png" height="25px" width="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/charanjot27"><img
+          src="images/git-removebg-preview.png" height="25px" width="25px"></a></p>
+      <!-- <div class="hover-text">
+        Charanjot Singh is the Co-Lead, responsible for creating a chatbot AI assistant to enhance user interaction.
+    </div> -->
+    </div>
+
+    <div class="team-card">
+      <img src="images/krishnan.jpeg" alt="Team Member 1"
+        style="width: 160px;height: 160px;border-radius: 10px;transition: transform 0.3s ease;">
+      <p>Krishnansh Puri</p>
+      <p>Web-Dev Lead</p>
+      <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+            src="images/cap-removebg-preview.png" height="20px" width="20px">
+          &nbsp;<p>NIT JALANDHAR'28</p></span></center>
+      <p><a href="https://www.linkedin.com/in/krishnansh-puri/"><img src="images/LINKEDIN-removebg-preview.png" height="25px" width="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/KrishnanshPuri"><img
+          src="images/git-removebg-preview.png" height="25px" width="25px"></a></p>
+      <!-- <div class="hover-text">
             Krishnansh Puri is the Web-Dev lead, responsible for creating the entire front-end design and user interface. 
-        </div>
+        </div> -->
     </div>
     <div class="team-card">
-        <img src="images/ankit.jpg" alt="Team Member 2">
-        <p>Ankit Jaiswal</p>
-        <p>Back-End Lead</p>
-        <div class="hover-text">
+      <img src="images/ankit.jpg" alt="Team Member 2"
+        style="width: 160px;height: 160px;border-radius: 10px;transition: transform 0.3s ease;">
+      <p>Ankit Jaiswal</p>
+      <p>Back-End Lead</p>
+      <center><span style="display: inline-flex; align-items: center;text-align: center;"><img
+            src="images/cap-removebg-preview.png" height="20px" width="20px">
+          &nbsp;<p>NIT JALANDHAR'28</p></span></center>
+      <p><a href="https://www.linkedin.com/in/ankit-jaiswal-158a84311/"><img src="images/LINKEDIN-removebg-preview.png" height="25px" width="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/A-jaiswal2005"><img
+          src="images/git-removebg-preview.png" height="25px" width="25px"></a></p>
+      <!-- <div class="hover-text">
             Ankit Jaiswal is the Back-End Lead, managing server-side development and database integration.
-        </div>
+        </div> -->
     </div>
 
-  
-</section>
+
+  </section>
 
 
   <!-- Footer -->
   <footer>
     <div class="footer-column">
       <h3>Contact Us</h3>
-      <ul>
-        <li><a href="#">Email</a></li>
-        <li><a href="#">Phone</a></li>
-        <li><a href="#">Location</a></li>
-      </ul>
+      <br>
+      <a href="#home"><img src="images/insta-removebg-preview.png" alt="insta" srcset="" height="30px" width = "30"></a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="#home"><img src="images/LINKEDIN-removebg-preview.png" alt="insta" srcset=""  height="30px" width = "30"></a>
+      &nbsp;&nbsp;&nbsp;
+      <a href="#home"><img src="images/mail-removebg-preview.png" alt="insta" srcset=""  height="30px" width = "30"></a>
     </div>
     <div class="footer-column">
       <h3>References</h3>
@@ -191,7 +358,11 @@
       </ul>
     </div>
   </footer>
+  <footer>
+    &copy;&nbsp;2025 Trend-Forge.All rights reserved
+  </footer>
   <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/01/05/14/20250105142152-5RC6DD4S.js"></script> -->
 </body>
+
 </html>
