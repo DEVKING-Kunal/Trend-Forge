@@ -26,28 +26,18 @@
 
   <!-- Navigation Bar -->
   <header id="navbar" class="navbar">
+    <div class="logo">Trend-Forge</div>
     <nav>
       <ul>
-        <li><span style="display: inline-flex; align-items: center;"><img src="images\home.jpg" height="20px"
-              width="20px">&nbsp;<a href="#home">
-              <h3>Home</h3>
-            </a></span></li>
-        <li><span style="display: inline-flex; align-items: center;"><img src="images\info.jpeg" height="20px"
-              width="20px">&nbsp;<a href="#about">
-              <h3>About</h3>
-            </a></span></li>
-
-        <li><span style="display: inline-flex; align-items: center;"><img src="images\team.jpeg" height="30px"
-              width="30px">&nbsp;<a href="#team">
-              <h3>Team</h3>
-            </a></span></li>
-        <li><a href="#" class="button">
-            Get Started
-            <span class="arrow"></span>
-          </a></li>
+        <li><span style="display: inline-flex; align-items: center;"><img src="images/home.jpg" height="20px" width="20px">&nbsp;<a href="#home">Home</a></span></li>
+        <li><span style="display: inline-flex; align-items: center;"><img src="images/info.jpeg" height="20px" width="20px">&nbsp;<a href="#about">About</a></span></li>
+        <li><span style="display: inline-flex; align-items: center;"><img src="images/team.jpeg" height="30px" width="30px">&nbsp;<a href="#team">Team</a></span></li>
+        <li><span style="display: inline-flex; align-items: center;"><img src="images/dasboardlogo.png" height="30px" width="30px">&nbsp;<a href="dashboard.html">Dashboard</a></span></li>
       </ul>
     </nav>
   </header>
+  
+  
 
   <!-- Welcome Section -->
   <section id="home" class="welcome-section">
@@ -226,38 +216,73 @@
     </div>
   </div>
 
-  <!-- About Section -->
-  <section id="about" class="about-section">
-    <div class="about-box">
-      <h2>About Our Website</h2>
-      <p>Our website provides a comprehensive solution for social media performance analysis, combining cutting-edge
-        technologies like Langflow and ChatGPT. With real-time data processing, users can gain insights into engagement,
-        growth, and content effectiveness. By tracking metrics across platforms, users can optimize their social media
-        strategies for maximum impact.</p>
-
-
-      <!-- Statistics Section -->
-      <section class="statistics-section">
-        <div class="stat-card">
-          <h3>1M+</h3>
-          <p>Social Media Accounts Analyzed</p>
-        </div>
-        &nbsp;&nbsp;
-        <div class="stat-card">
-          <h3>500K+</h3>
-          <p>Data Points Processed Daily</p>
-        </div>&nbsp;&nbsp;
-        <div class="stat-card">
-          <h3>95%</h3>
-          <p>Accuracy in Performance Predictions</p>
-        </div>&nbsp;&nbsp;
-        <div class="stat-card">
-          <h3>99%</h3>
-          <p>Customer Satisfaction</p>
-        </div>
-      </section>
-  </section>
+ <!-- About Section -->
+<section id="about" class="about-section">
+  <!-- About Box -->
+  <div class="about-box">
+    <h2>About Our Website</h2>
+    <p>
+      Our website provides a comprehensive solution for social media performance analysis, combining cutting-edge 
+      technologies like Langflow and ChatGPT. With real-time data processing, users can gain insights into engagement, 
+      growth, and content effectiveness. By tracking metrics across platforms, users can optimize their social media 
+      strategies for maximum impact.
+    </p>
+    <p>
+      Whether you are an individual influencer or a business, our platform delivers actionable insights to help you 
+      elevate your online presence. With AI-powered analytics and machine learning models, we can predict trends and 
+      provide recommendations for optimizing your social media campaigns.
+    </p>
+    
+    <p>
+      Stay ahead of the competition with real-time updates and trend predictions. Our social media analytics solution is 
+      designed for both beginners and advanced users, ensuring that everyone can leverage data to boost their online 
+      strategies.
+    </p>
+   
   </div>
+
+  <!-- Fun-Fact Game Card -->
+  <div class="mini-game-container">
+    <h3>Fun-Fact Game</h3>
+    <div id="network-graph">
+      <div class="node" data-fact="Over 3.6 billion people use social media worldwide!"></div>
+      <div class="node" data-fact="Instagram has over 1 billion monthly active users!"></div>
+      <div class="node" data-fact="Videos generate 1200% more shares than text and images combined."></div>
+      <div class="node" data-fact="80% of social media users access platforms on mobile."></div>
+      <div class="node" data-fact="Facebook remains the largest social media platform."></div>
+      <div class="node" data-fact="LinkedIn has over 900 million members worldwide!"></div>
+      <div class="node" data-fact="Twitter users post 500 million tweets daily."></div>
+      <div class="node" data-fact="Snapchat reaches 75% of 13–34-year-olds in the U.S.!"></div>
+      <div class="node" data-fact="TikTok was the most downloaded app in 2022!"></div>
+      <div class="node" data-fact="Social media ads can increase brand awareness by 93%."></div>
+    </div>
+    <p id="fact-display">Click on a node to reveal a fact!</p>
+  </div>
+</section>
+
+
+
+  
+  <!-- Statistics Section -->
+  <section class="statistics-section">
+    <h2>Our Impact</h2>
+    <div class="stat-card">
+      <h3>1M+</h3>
+      <p>Social Media Accounts Analyzed</p>
+    </div>
+    <div class="stat-card">
+      <h3>500K+</h3>
+      <p>Data Points Processed Daily</p>
+    </div>
+    <div class="stat-card">
+      <h3>95%</h3>
+      <p>Accuracy in Performance Predictions</p>
+    </div>
+    <div class="stat-card">
+      <h3>99%</h3>
+      <p>Customer Satisfaction</p>
+    </div>
+  </section>
 
   <!-- Team Section -->
   <center><span id = "team" style="display: inline-flex; align-items: center;text-align: center;"><img
@@ -276,9 +301,9 @@
           &nbsp;<p>NIT JALANDHAR'28</p></span></center>
       <p><a href="https://www.linkedin.com/in/kunal-kashyap-6b3504316/"><img src="images/LINKEDIN-removebg-preview.png" height="25px" width="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;
         <a href="https://github.com/DEVKING-Kunal"><img src="images/git-removebg-preview.png" height="25px" width="25px"></a></p>
-      <!-- <div class="hover-text">
+     <div class="hover-text">
          Kunal Kashyap is the Lead, leveraging AI/ML techniques to handle and analyze data effectively.
-          </div> -->
+          </div> 
 
     </div>
 
@@ -292,9 +317,9 @@
           &nbsp;<p>NIT JALANDHAR'28</p></span></center>
       <p><a href="https://www.linkedin.com/in/charanjot-singh-402412310/"><img src="images/LINKEDIN-removebg-preview.png" height="25px" width="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/charanjot27"><img
           src="images/git-removebg-preview.png" height="25px" width="25px"></a></p>
-      <!-- <div class="hover-text">
+      <div class="hover-text">
         Charanjot Singh is the Co-Lead, responsible for creating a chatbot AI assistant to enhance user interaction.
-    </div> -->
+    </div> 
     </div>
 
     <div class="team-card">
@@ -307,9 +332,9 @@
           &nbsp;<p>NIT JALANDHAR'28</p></span></center>
       <p><a href="https://www.linkedin.com/in/krishnansh-puri/"><img src="images/LINKEDIN-removebg-preview.png" height="25px" width="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/KrishnanshPuri"><img
           src="images/git-removebg-preview.png" height="25px" width="25px"></a></p>
-      <!-- <div class="hover-text">
+       <div class="hover-text">
             Krishnansh Puri is the Web-Dev lead, responsible for creating the entire front-end design and user interface. 
-        </div> -->
+        </div> 
     </div>
     <div class="team-card">
       <img src="images/ankit.jpg" alt="Team Member 2"
@@ -321,9 +346,9 @@
           &nbsp;<p>NIT JALANDHAR'28</p></span></center>
       <p><a href="https://www.linkedin.com/in/ankit-jaiswal-158a84311/"><img src="images/LINKEDIN-removebg-preview.png" height="25px" width="25px"></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://github.com/A-jaiswal2005"><img
           src="images/git-removebg-preview.png" height="25px" width="25px"></a></p>
-      <!-- <div class="hover-text">
+      <div class="hover-text">
             Ankit Jaiswal is the Back-End Lead, managing server-side development and database integration.
-        </div> -->
+        </div>
     </div>
 
 
@@ -363,6 +388,10 @@
   </footer>
   <!-- <script src="https://cdn.botpress.cloud/webchat/v2.2/inject.js"></script>
 <script src="https://files.bpcontent.cloud/2025/01/05/14/20250105142152-5RC6DD4S.js"></script> -->
+
+<!-- the game -->
+<script src="game.js"></script>
+
 </body>
 
 </html>
