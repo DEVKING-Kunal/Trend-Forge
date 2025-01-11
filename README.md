@@ -72,8 +72,10 @@ Forge your path to social media success with **Trend Forge**. Gain insights, str
 ---
 
 ## **Contributors**  
-- [Your Name]  
-- [Your Team Members]  
+- Kunal Kashyap (Designed and Developed Dashboard)
+- Ankit Jaiswal (God of Stunning UI and Landflow)
+- Charanjot Singh (Designed Chatbot and helped everybody) 
+- Krishnansh Puri (Structured Homepage and Fun-Fact Game)  
 
 For feedback or contributions, feel free to reach out!  
 
